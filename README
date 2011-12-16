@@ -1,0 +1,11 @@
+2bpp and 4bpp compressed versions of the Firefox logo live in img/. To create
+more compressed images, you can modify img/makepvr.sh (should work on a Mac 
+with developer tools installed).
+
+To compile and run, just type "make", which does 2bpp decompression by default.
+To see 4bpp decompression, run "make decompress-4". For now, you'll have to
+change the hardcoded input and output strings in decompress.c if you want to
+decompress different files.
+
+The my_pvr.c library is still incomplete, but I'm attempting to rewrite the
+Fortsiege PVRT library, which is translated from C++ and pretty hard to read.
